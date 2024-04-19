@@ -8,13 +8,16 @@ public class PlayerOneWayPlatform : MonoBehaviour
 
     [SerializeField] private BoxCollider2D playerCollider;
 
+    public Animator animator;
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
         {
             if (currentOneWayPlatform != null)
             {
+                animator.SetBool("IsFalling", true);
                 StartCoroutine(DisableCollision());
+                animator.SetBool("IsJumping", false);
             }
         }
     }
@@ -40,7 +43,7 @@ public class PlayerOneWayPlatform : MonoBehaviour
         CompositeCollider2D platformCollider = currentOneWayPlatform.GetComponent<CompositeCollider2D>();
 
         Physics2D.IgnoreCollision(playerCollider, platformCollider);
-        yield return new WaitForSeconds(0.25f);
+        yield return new WaitForSeconds(0.5f);
         Physics2D.IgnoreCollision(playerCollider, platformCollider, false);
     }
 }

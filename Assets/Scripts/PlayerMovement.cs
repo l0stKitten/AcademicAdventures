@@ -5,19 +5,21 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour {
 
 	public CharacterController2D controller;
-    public Animator animator;
 
+    public Animator animator;
 
 	public float runSpeed = 40f;
 
 	float horizontalMove = 0f;
 	bool jump = false;
-	bool crouch = false;
+	bool fall = false;
 	
 	// Update is called once per frame
 	void Update () {
 
 		horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+
+		animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
 		if (Input.GetButtonDown("Jump"))
 		{
@@ -25,13 +27,10 @@ public class PlayerMovement : MonoBehaviour {
             animator.SetBool("IsJumping", true);
 		}
 
-		if (Input.GetButtonDown("Crouch"))
+		if (Input.GetButtonDown("Fall"))
 		{
-            animator.SetBool("IsJumping", true);
-			crouch = true;
-		} else if (Input.GetButtonUp("Crouch"))
-		{
-			crouch = false;
+			fall = true;
+			animator.SetBool("IsFalling", true);
 		}
 
 	}
@@ -39,12 +38,13 @@ public class PlayerMovement : MonoBehaviour {
     public void OnLanding ()
 	{
 		animator.SetBool("IsJumping", false);
+		animator.SetBool("IsFalling", false);
 	}
 
 	void FixedUpdate ()
 	{
 		// Move our character
-		controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump);
+		controller.Move(horizontalMove * Time.fixedDeltaTime, jump, fall);
 		jump = false;
 	}
 }
