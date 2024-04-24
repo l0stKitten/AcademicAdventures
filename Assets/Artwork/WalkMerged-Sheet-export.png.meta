@@ -117,15 +117,15 @@ TextureImporter:
         y: 0
         width: 32
         height: 32
-      alignment: 9
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 469b8ea013989bc409e1857fbda50f6d
-      internalID: -1751662746
+      spriteID: 75da904e53a0b6d47add22466cdee7f9
+      internalID: 1916501291
       vertices: []
       indices: 
       edges: []
@@ -138,15 +138,15 @@ TextureImporter:
         y: 0
         width: 32
         height: 32
-      alignment: 9
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32d2ccf8346964a4893f81be124115bf
-      internalID: 110167709
+      spriteID: 7d9f7ec66c96d384f82031b4da8710c4
+      internalID: -1463422813
       vertices: []
       indices: 
       edges: []
@@ -159,15 +159,15 @@ TextureImporter:
         y: 0
         width: 32
         height: 32
-      alignment: 9
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6dd93545a0a1a84aa0bb05b625eac77
-      internalID: 204545586
+      spriteID: 55982c46c6b02604dacdcc3f37ced58a
+      internalID: 598367063
       vertices: []
       indices: 
       edges: []
@@ -180,15 +180,15 @@ TextureImporter:
         y: 0
         width: 32
         height: 32
-      alignment: 9
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa32ccb4252ed9f4c86ce7f6d727bce9
-      internalID: 693548608
+      spriteID: 618ebb22d6d4f934ea03a5303ca50a08
+      internalID: 857645542
       vertices: []
       indices: 
       edges: []
@@ -204,10 +204,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      WalkMerged-Sheet-export_0: -1751662746
-      WalkMerged-Sheet-export_1: 110167709
-      WalkMerged-Sheet-export_2: 204545586
-      WalkMerged-Sheet-export_3: 693548608
+      WalkMerged-Sheet-export_0: 1916501291
+      WalkMerged-Sheet-export_1: -1463422813
+      WalkMerged-Sheet-export_2: 598367063
+      WalkMerged-Sheet-export_3: 857645542
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
